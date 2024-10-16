@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="classes" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="testcase.LoginWithInvalidData">
+        <methods>
+          <include name="closeApp"/>
+          <include name="StartApplication"/>
+          <include name="inValidData"/>
+        </methods>
+      </class> <!-- testcase.LoginWithInvalidData -->
+      <class name="testcase.LoginAndLogout">
+        <methods>
+          <include name="setFileName"/>
+          <include name="closeApp"/>
+          <include name="StartApplication"/>
+          <include name="loginLogout"/>
+        </methods>
+      </class> <!-- testcase.LoginAndLogout -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

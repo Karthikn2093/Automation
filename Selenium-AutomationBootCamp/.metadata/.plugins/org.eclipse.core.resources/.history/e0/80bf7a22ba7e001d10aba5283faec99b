@@ -1,0 +1,18 @@
+package testpackages;
+
+import java.util.LinkedHashSet;
+
+public class CollectionsWithSet {
+
+	public static void main(String[] args) {
+		
+		LinkedHashSet set = new LinkedHashSet();
+		set.add("Name");
+		set.add(1000);
+		set.add(true);
+		
+		System.out.println(set);
+
+	}
+
+}

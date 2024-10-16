@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="testPackage.RetryAnnotation"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testPackage.CreateCases">
+        <methods>
+          <include name="createcases"/>
+          <include name="exitApp"/>
+        </methods>
+      </class> <!-- testPackage.CreateCases -->
+      <class name="testPackage.CreateIndividual">
+        <methods>
+          <include name="exitApp"/>
+          <include name="createIndividual"/>
+        </methods>
+      </class> <!-- testPackage.CreateIndividual -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
